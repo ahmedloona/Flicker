@@ -9,6 +9,8 @@
 1. photos_albums_join
 2. photos_tags_join
 
+***
+
 | __users__       |               |                           |
 |-----------------|---------------|---------------------------|
 | __column_name__ | __data_type__ | __details__               |
@@ -23,6 +25,7 @@
 | create_index    | username      | unique:true               |
 | create_index    | session_token | unique:true               |
 
+***
 
 | __photos__    |           |                       |
 |---------------|-----------|-----------------------|
@@ -38,6 +41,8 @@
 | create_index  | user_id   |                       |
 | create_index  | caption   | ?                     |
 
+***
+
 | __albums__   |           |                       |
 |--------------|-----------|-----------------------|
 | __column_name__  | __data_type__ | __details__   |
@@ -51,6 +56,8 @@
 | create_index | user_id   |                       |
 | create_index | name      | ?                     |
 
+***
+
 | __photos_albums_join__ |           |                                                   |
 |--------------------|-----------|---------------------------------------------------|
 | __column_name__        | __data_type__ | __details__                                           |
@@ -62,6 +69,8 @@
 |                    |           |                                                   |
 | create_index       | photo_id  | ? why index this. how does it speedup the search? |
 | create_index       | album_id  | ? why index this                                  |
+
+***
 
 | __photos_tags_join__ |           |                                                   |
 |------------------|-----------|---------------------------------------------------|
@@ -75,6 +84,8 @@
 | create_index     | photo_id  | ? why index this. how does it speedup the search? |
 | create_index     | tag_id    | ? why index this                                  |
 
+***
+
 | __tags__         |           |                       |
 |--------------|-----------|-----------------------|
 | __column_name__  | __data_type__ | __details__               |
@@ -85,6 +96,7 @@
 |              |           |                       |
 | create_index | title     | unique:true ?         |
 
+***
 
 | __comments__     |           |                       |
 |--------------|-----------|-----------------------|
