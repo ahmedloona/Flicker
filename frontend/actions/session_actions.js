@@ -13,7 +13,7 @@ const receiveCurrentUser = (user) => {
 
 const removeCurrentUser = () => {
   return ({
-    type: LOGOUT_CURRENT_USER,
+    type: REMOVE_CURRENT_USER,
   })
 }
 
@@ -24,20 +24,24 @@ const receiveErrors = (errors) => {
   })
 }
 
-export const signin = (user) => dispatch => {
-  return(
-    SessionApiUtil.signin(user).then( user => dispatch(receiveCurrentUser(user)))
-  )
-}
+export const signup = user => dispatch => (
+  SessionApiUtil.signup(user).then(user => (
+    dispatch(receiveCurrentUser(user))
+  ), err => (
+    dispatch(receiveErrors(err.responseJSON))
+  ))
+);
 
-export const signout = () => dispatch => {
-  return(
-    SessionApiUtil.signout().then( () => dispatch(removeCurrentUser()))
-  )
-}
+export const signin = user => dispatch => (
+  SessionApiUtil.signin(user).then(user => (
+    dispatch(receiveCurrentUser(user))
+  ), err => (
+    dispatch(receiveErrors(err.responseJSON))
+  ))
+);
 
-export const signup = (user) => dispatch => {
-  return(
-    SessionApiUtil.signup(user).then( user => dispatch(receiveCurrentUser(user)))
-  )
-}
+export const signout = () => dispatch => (
+  SessionApiUtil.signout().then(user => (
+    dispatch(removeCurrentUser())
+  ))
+);
