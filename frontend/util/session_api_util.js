@@ -18,7 +18,7 @@ export const signin = (user) => {
   )
 }
 
-export const logout = () => {
+export const signout = () => {
   return (
     $.ajax({
       method: "DELETE",
