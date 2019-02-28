@@ -4,8 +4,10 @@ import { signin } from '../../actions/session_actions';
 import SignInForm from './signin_form';
 
 const mSP = (state) => {
+  let errors = state.errors.session;
   return ({
     formType: 'signin',
+    signinErrors: errors,
   })
 }
 

@@ -30,14 +30,18 @@
   font-size: 0.5em;
   background-color: white;
   border-radius: 3px;
-  border-color: black;
+  border: 1px solid;
   padding: 5px;
   font-family: arial;
   color: #128fdc;
+  width: 80%;
 }
 
-input {
+.signin-form-container input {
   border-style: none;
+  height: 20px;
+  width: 100%;
+  outline: none;
 }
 
 .form-title {
@@ -48,8 +52,24 @@ input {
 #signin-button {
   border-radius: 3px;
   background-color: rgb(18, 143, 220);
-  width: 50%;
+  width: 80%;
   height: 30px;
   border-style: none;
   color: white;
+}
+
+.circles {
+  background: url("circles.jpg");
+  // background-color: black;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.errors {
+  height: 10px;
+  width: 80%;
+  font-size: 0.4em;
+  font-family: arial;
+  color: red;
 }
