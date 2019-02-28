@@ -5,7 +5,6 @@ import SignInFormContainer from './session_form/signin_form_container';
 
 const App = () => (
   <div>
-    <h1>Welcome to Friskr</h1>
     <Route path="/signup" component={SignUpFormContainer} />
     <Route path="/signin" component={SignInFormContainer} />
   </div>

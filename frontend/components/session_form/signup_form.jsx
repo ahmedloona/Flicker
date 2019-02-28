@@ -27,7 +27,7 @@ class SignUpForm extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label> Username
+        <label className="username"> Username
           <input
             type='text'
             onChange={this.update('username')}

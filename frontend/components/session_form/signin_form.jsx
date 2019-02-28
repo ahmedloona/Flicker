@@ -27,22 +27,26 @@ class SignInForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label> Username
-          <input
-            type='text'
-            onChange={this.update('username')}
-          />
-        </label>
-        <label> Password
-          <input
-            type='text'
-            onChange={this.update('password')}
-          />
-        </label>
-        <br />
-        <button type="submit">Sign In</button>
-      </form>
+      <div className="signin-form-container">
+          <form onSubmit={this.handleSubmit} className="signin-form">
+            <div className="form-title">Log in to Friskr</div>
+              <div className="input-container">
+                <div>username</div>
+                <input
+                  type='text'
+                  onChange={this.update('username')}
+                />
+              </div>
+              <div className="input-container">
+                <div>password</div>
+                <input
+                  type='text'
+                  onChange={this.update('password')}
+                />
+              </div>
+            <button type="submit" id="signin-button">Next</button>
+          </form>
+      </div>
     )
   }
 }
