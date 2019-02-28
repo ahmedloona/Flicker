@@ -6,7 +6,6 @@
 .signin-form-container {
     width: 100%;
     height: 100vh;
-    // background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +23,8 @@
   width: 200px;
   height: 250px;
   border-radius: 3px;
+  padding: 5px;
+  padding-bottom: 20px;
 }
 
 .input-container {
@@ -42,6 +43,7 @@
   height: 20px;
   width: 100%;
   outline: none;
+  background-color: white;
 }
 
 .form-title {
@@ -49,7 +51,7 @@
   font-size: 0.75em;
 }
 
-#signin-button {
+#signin-button, #demo-signin-button {
   border-radius: 3px;
   background-color: rgb(18, 143, 220);
   width: 80%;
@@ -58,9 +60,12 @@
   color: white;
 }
 
+#password {
+  -webkit-text-security: disc;
+}
+
 .circles {
   background: url("circles.jpg");
-  // background-color: black;
   background-size: cover;
   width: 30px;
   height: 30px;

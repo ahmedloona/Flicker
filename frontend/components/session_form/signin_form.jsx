@@ -9,6 +9,7 @@ class SignInForm extends React.Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.populateDemoFields = this.populateDemoFields.bind(this);
 
   }
 
@@ -25,6 +26,15 @@ class SignInForm extends React.Component {
     this.setState({username: '', password: ''});
   }
 
+  populateDemoFields(e) {
+    e.preventDefault();
+    // debugger
+    this.setState({username: "Ahmed", password: "123456"}, () => {
+      const user = Object.assign({}, this.state);
+      this.props.processForm(user);
+      setTimeout( () => this.setState({username: '', password: ''}) ,1000);
+    });
+  }
 
   render() {
     return (
@@ -44,12 +54,14 @@ class SignInForm extends React.Component {
               <div className="input-container">
                 <div>password</div>
                 <input
+                  id="password"
                   type='text'
                   onChange={this.update('password')}
                   value={this.state.password}
                 />
               </div>
             <button type="submit" id="signin-button">Next</button>
+            <button id="demo-signin-button" onClick={this.populateDemoFields}>Demo</button>
           </form>
       </div>
     )
