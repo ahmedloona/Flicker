@@ -28,11 +28,10 @@ class SignInForm extends React.Component {
 
   populateDemoFields(e) {
     e.preventDefault();
-    // debugger
     this.setState({username: "Ahmed", password: "123456"}, () => {
       const user = Object.assign({}, this.state);
-      this.props.processForm(user);
-      setTimeout( () => this.setState({username: '', password: ''}) ,1000);
+      this.props.processForm(user).then( () => this.props.history.push("/"));
+      // setTimeout( () => this.setState({username: '', password: ''}) ,1000);
     });
   }
 
