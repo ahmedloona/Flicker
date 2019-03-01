@@ -42,7 +42,7 @@ class SignInForm extends React.Component {
       <div className="form-container" id="signin">
           <form onSubmit={this.handleSubmit} className="form">
           <div className="circles"></div>
-              <div className="form-title">Log in to Friskr</div>
+              <div className="form-title">Log in to Flutter</div>
               <div className="errors">{this.props.signinErrors}</div>
               <div className="input-container">
                 <div>username <span>*</span></div>

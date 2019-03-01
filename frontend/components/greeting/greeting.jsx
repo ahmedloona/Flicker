@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NavContainer from "../nav/nav_container";
 
 const Greeting = (props) => {
   if (props.currentUser === undefined) {

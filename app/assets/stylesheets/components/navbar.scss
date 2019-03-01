@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar-signedout {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+  background-color: rgba(46, 45, 45, 0.55);
+  padding: 15px;
+}
+
+#signup-button {
+  margin-left: 20px;
+  background-color: white;
+  border-style: none;
+  border-radius: 5px;
+}
+
+#signup-button > * {
+  text-decoration: none;
+  font-family: 'Helvetica';
+  color: black;
+  font-size: 1em;
+}
+
+#signup-button > *:hover {
+  color: grey;
+}
+
+
+#signin-link {
+  text-decoration: none;
+  font-family: 'Helvetica';
+  color: white;
+  font-size: 0.8em;
+}
