@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import NavbarContainer from '../nav/nav_container';
 
 class SignInForm extends React.Component {
   constructor(props) {
@@ -39,32 +41,39 @@ class SignInForm extends React.Component {
 
   render() {
     return (
-      <div className="form-container" id="signin">
-          <form onSubmit={this.handleSubmit} className="form">
-          <div className="circles"></div>
-              <div className="form-title">Log in to Flutter</div>
-              <div className="errors">{this.props.signinErrors}</div>
-              <div className="input-container">
-                <div>username <span>*</span></div>
-                <input
-                  type='text'
-                  onChange={this.update('username')}
-                  value={this.state.username}
-                />
-              </div>
-              <div className="input-container">
-                <div>password <span>*</span></div>
-                <input
-                  id="password"
-                  type='text'
-                  onChange={this.update('password')}
-                  value={this.state.password}
-                />
-              </div>
-            <div id="required">* required</div>
-            <button type="submit" id="submit-button">Next</button>
-            <button id="demo-button" onClick={this.populateDemoFields}>Demo</button>
-          </form>
+      <div>
+        <div className="navbar-login-form">
+          <div id="flutter-logo-container"><Link to="/" id="flutter-logo">flutter</Link></div>
+        </div>
+        <div className="form-container" id="signin">
+            <form onSubmit={this.handleSubmit} className="form">
+            <div className="circles"></div>
+                <div className="form-title">Log in to Flutter</div>
+                <div className="errors">{this.props.signinErrors}</div>
+                <div className="input-container">
+                  <div>username <span>*</span></div>
+                  <input
+                    type='text'
+                    onChange={this.update('username')}
+                    value={this.state.username}
+                    autofocus="autofocus"
+                  />
+                </div>
+                <div className="input-container">
+                  <div>password <span>*</span></div>
+                  <input
+                    id="password"
+                    type='text'
+                    onChange={this.update('password')}
+                    value={this.state.password}
+                  />
+                </div>
+              <div id="required">* required</div>
+              <button type="submit" id="submit-button">Next</button>
+              <button id="demo-button" onClick={this.populateDemoFields}>Demo</button>
+              <div id="no-account-yet">Not a Flickr member? <Link to="/signup">Sign up here</Link></div>
+            </form>
+        </div>
       </div>
     )
   }

@@ -14,7 +14,6 @@
 #signin {
   background: url("signin.jpg");
   background-size: cover;
-
 }
 
 #signup {
@@ -28,11 +27,12 @@
   justify-content: space-around;
   align-items: center;
   background-color: white;
-  width: 200px;
+  width: 250px;
   height: 300px;
   border-radius: 3px;
   padding: 5px;
   padding-bottom: 20px;
+  opacity: 0.85;
 }
 
 .input-container {
@@ -69,6 +69,14 @@
   color: white;
 }
 
+#submit-button:hover {
+  opacity: 0.93;
+}
+
+#demo-button:hover {
+  opacity: 0.93;
+}
+
 #password {
   -webkit-text-security: disc;
 }
@@ -93,5 +101,26 @@
   font-size: 0.6em;
   color: gray;
   font-style: italic;
-  padding-right: 100px;
+  padding-right: 140px;
+}
+
+#already-has-account {
+  font-size: 0.6em;
+  color: gray;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+#already-has-account {
+  font-size: 0.6em;
+  color: gray;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+#no-account-yet {
+  font-size: 0.6em;
+  color: gray;
+  margin: 0 auto;
+  margin-top: 5px;
 }

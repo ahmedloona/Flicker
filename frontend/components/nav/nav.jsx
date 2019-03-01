@@ -12,7 +12,7 @@ const Nav = (props) => {
     )
   } else {
       return(
-        <div className="navbar-signein">
+        <div className="navbar-signedin">
           <h1>{`Welcome ${props.currentUser.username}`}</h1>
           <button onClick={props.signout}>SignOut</button>
         </div>

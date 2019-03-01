@@ -2,6 +2,17 @@
   box-sizing: border-box;
 }
 
+.navbar-login-form {
+  width: 100%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  grid-gap: 5px;
+  height: 50px;
+  background-color: rgba(46, 45, 45, 0.55);
+  padding: 10px;
+}
+
 .navbar-signedout {
   width: 100%;
   position: absolute;
