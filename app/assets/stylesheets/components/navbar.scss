@@ -5,18 +5,38 @@
 .navbar-signedout {
   width: 100%;
   position: absolute;
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  grid-gap: 5px;
   height: 50px;
   background-color: rgba(46, 45, 45, 0.55);
-  padding: 15px;
+  padding: 10px;
+}
+
+#flutter-logo-container {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#flutter-logo {
+  text-decoration: none;
+  font-family: 'Helvetica';
+  color: white;
+  font-size: 1.5em;
 }
 
 #signup-button {
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-left: 10px;
   background-color: white;
   border-style: none;
   border-radius: 5px;
+  grid-column-start: 5;
+  grid-column-end: 6;
 }
 
 #signup-button > * {
@@ -30,6 +50,15 @@
   color: grey;
 }
 
+
+#signin-link-container {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
 
 #signin-link {
   text-decoration: none;

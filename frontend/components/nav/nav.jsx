@@ -5,7 +5,8 @@ const Nav = (props) => {
   if (props.currentUser === undefined) {
     return(
       <div className="navbar-signedout">
-        <div><Link to="/signin" id="signin-link">Log In</Link></div>
+        <div id="flutter-logo-container"><Link to="/" id="flutter-logo">flutter</Link></div>
+        <div id="signin-link-container"><Link to="/signin" id="signin-link">Log In</Link></div>
         <button id="signup-button"><Link to="/signup">Sign Up</Link></button>
       </div>
     )
