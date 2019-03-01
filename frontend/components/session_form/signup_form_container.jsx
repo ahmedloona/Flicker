@@ -4,8 +4,10 @@ import { signup } from '../../actions/session_actions';
 import SignUpForm from './signup_form';
 
 const mSP = (state) => {
+  let errors = state.errors.session;
   return ({
     formType: 'signup',
+    signupErrors: errors,
   })
 }
 

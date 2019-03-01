@@ -3,25 +3,33 @@
   box-sizing: border-box;
 }
 
-.signin-form-container {
+.form-container {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("signin.jpg");
-    background-size: cover;
+}
+
+#signin {
+  background: url("signin.jpg");
+  background-size: cover;
 
 }
 
-.signin-form {
+#signup {
+  background: url("polarbear.jpeg");
+  background-size: cover;
+}
+
+.form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: white;
   width: 200px;
-  height: 250px;
+  height: 300px;
   border-radius: 3px;
   padding: 5px;
   padding-bottom: 20px;
@@ -38,7 +46,8 @@
   width: 80%;
 }
 
-.signin-form-container input {
+.form-container input {
+  font-size: 1.25em;
   border-style: none;
   height: 20px;
   width: 100%;
@@ -51,7 +60,7 @@
   font-size: 0.75em;
 }
 
-#signin-button, #demo-signin-button {
+#submit-button, #demo-button {
   border-radius: 3px;
   background-color: rgb(18, 143, 220);
   width: 80%;
@@ -72,9 +81,17 @@
 }
 
 .errors {
-  height: 10px;
+  padding-top: 5px;
+  height: 20px;
   width: 80%;
   font-size: 0.4em;
   font-family: arial;
-  color: red;
+  color: #b20f0f;
+}
+
+#required {
+  font-size: 0.6em;
+  color: gray;
+  font-style: italic;
+  padding-right: 100px;
 }

@@ -24,10 +24,12 @@ class SignInForm extends React.Component {
     const user = Object.assign({}, this.state);
     this.props.processForm(user);
     this.setState({username: '', password: ''});
+    this.props.processForm(user).then( () => this.props.history.push("/"));
   }
 
   populateDemoFields(e) {
     e.preventDefault();
+    // debugger
     this.setState({username: "Ahmed", password: "123456"}, () => {
       const user = Object.assign({}, this.state);
       this.props.processForm(user).then( () => this.props.history.push("/"));
@@ -37,13 +39,13 @@ class SignInForm extends React.Component {
 
   render() {
     return (
-      <div className="signin-form-container">
-          <form onSubmit={this.handleSubmit} className="signin-form">
+      <div className="form-container" id="signin">
+          <form onSubmit={this.handleSubmit} className="form">
           <div className="circles"></div>
-            <div className="form-title">Log in to Friskr</div>
+              <div className="form-title">Log in to Friskr</div>
               <div className="errors">{this.props.signinErrors}</div>
               <div className="input-container">
-                <div>username</div>
+                <div>username <span>*</span></div>
                 <input
                   type='text'
                   onChange={this.update('username')}
@@ -51,7 +53,7 @@ class SignInForm extends React.Component {
                 />
               </div>
               <div className="input-container">
-                <div>password</div>
+                <div>password <span>*</span></div>
                 <input
                   id="password"
                   type='text'
@@ -59,8 +61,9 @@ class SignInForm extends React.Component {
                   value={this.state.password}
                 />
               </div>
-            <button type="submit" id="signin-button">Next</button>
-            <button id="demo-signin-button" onClick={this.populateDemoFields}>Demo</button>
+            <div id="required">* required</div>
+            <button type="submit" id="submit-button">Next</button>
+            <button id="demo-button" onClick={this.populateDemoFields}>Demo</button>
           </form>
       </div>
     )
