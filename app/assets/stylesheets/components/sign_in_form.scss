@@ -12,12 +12,12 @@
 }
 
 #signin {
-  background: url("signin.jpg");
+  background: image-url("signin.jpg");
   background-size: cover;
 }
 
 #signup {
-  background: url("polarbear.jpeg");
+  background: image-url("polarbear.jpeg");
   background-size: cover;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .circles {
-  background: url("circles.jpg");
+  background: image-url("circles.jpg");
   background-size: cover;
   width: 30px;
   height: 30px;
