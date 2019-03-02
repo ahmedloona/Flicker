@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
 import React from 'react';
-import { signin } from '../../actions/session_actions';
+import { signin, clearErrors } from '../../actions/session_actions';
 import SignInForm from './signin_form';
+// import {receiveErrors} from '../../actions/session_actions';
 
 const mSP = (state) => {
   let errors = state.errors.session;
@@ -14,6 +15,7 @@ const mSP = (state) => {
 const mDP = (dispatch) => {
   return ({
     processForm: (user) => dispatch(signin(user)),
+    clearErrors: () => dispatch(clearErrors()),
   })
 }
 

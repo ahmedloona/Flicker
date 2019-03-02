@@ -15,6 +15,11 @@ class SignInForm extends React.Component {
 
   }
 
+  componentDidMount(){
+    // debugger
+    this.props.clearErrors()
+  }
+
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
