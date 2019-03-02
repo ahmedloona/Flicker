@@ -5,7 +5,6 @@ import configureStore from './store/store';
 // import {signup, signin, signout} from './actions/session_actions';
 import Root from './components/root';
 
-
 document.addEventListener('DOMContentLoaded', () => {
 
   // test AJAX utils
@@ -13,7 +12,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // window.signin = SessionUtil.signin;
   // window.signout = SessionUtil.signout;
 
-  const store = configureStore();
+  let store;
+  if (window.currentUser) {
+    const preloadedState = {
+      entities: {
+        users: { [window.currentUser.id]: window.currentUser }
+      },
+      session: { id: window.currentUser.id }
+    };
+    store = configureStore(preloadedState);
+    delete window.currentUser;
+  } else {
+    store = configureStore();
+  }
+
   // test THUNK action creators
   // window.signup = signup;
   // window.signin = signin;

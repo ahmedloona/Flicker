@@ -26,7 +26,7 @@ class SignInForm extends React.Component {
     const user = Object.assign({}, this.state);
     // this.props.processForm(user);
     this.setState({username: '', password: ''});
-    this.props.processForm(user).then( () => this.props.history.push("/"));
+    this.props.processForm(user).then( () => this.props.history.push("/dashboard"));
   }
 
   populateDemoFields(e) {
@@ -34,7 +34,7 @@ class SignInForm extends React.Component {
     // debugger
     this.setState({username: "Ahmed", password: "123456"}, () => {
       const user = Object.assign({}, this.state);
-      this.props.processForm(user).then( () => this.props.history.push("/"));
+      this.props.processForm(user).then( () => this.props.history.push("/dashboard"));
       // setTimeout( () => this.setState({username: '', password: ''}) ,1000);
     });
   }
