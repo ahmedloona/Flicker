@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import * as SessionUtil from './util/session_api_util';
+import * as PhotoUtil from './util/photos_api_util';
+
 import configureStore from './store/store';
 // import {signup, signin, signout} from './actions/session_actions';
 import Root from './components/root';
@@ -11,6 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // window.signup = SessionUtil.signup;
   // window.signin = SessionUtil.signin;
   // window.signout = SessionUtil.signout;
+  window.createPhoto = PhotoUtil.createPhoto;
+  window.getPhoto = PhotoUtil.getPhoto;
+  window.getPhotos = PhotoUtil.getPhotos;
+  window.editPhoto = PhotoUtil.editPhoto;
+  window.deletePhoto = PhotoUtil.deletePhoto;
+  window.getUserPhotos = PhotoUtil.getUserPhotos;
 
   let store;
   if (window.currentUser) {
