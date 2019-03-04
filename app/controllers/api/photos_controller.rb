@@ -13,6 +13,7 @@ class Api::PhotosController < ApplicationController
     @photo = Photo.find_by(id: params[:id])
     if @photo
       render "api/photos/show"
+      # render "api/photos/show.html.erb"
     else
       render json: ["photo not found"], status: 404
     end

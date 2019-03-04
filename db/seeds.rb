@@ -5,3 +5,27 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# User
+ahmed = User.create!(username: "Ahmed", password: "123456", email: "ahmed@gmail.com")
+
+mike = User.create!(username: "mike", password: "123456", email: "mike@yahoo.com")
+
+# Photo
+photo1 = Photo.create!(user_id: ahmed.id, caption: "foliage")
+photo2 = Photo.create!(user_id: ahmed.id, caption: "card")
+photo3 = Photo.create!(user_id: ahmed.id, caption: "rain")
+
+photo4 = Photo.create!(user_id: mike.id, caption: "architecture")
+photo5 = Photo.create!(user_id: mike.id, caption: "beach")
+photo6 = Photo.create!(user_id: mike.id, caption: "boat")
+
+
+#attach url
+photo1.image.attach(io: File.open("/Users/ahmed/Downloads/photos/foliage.jpg"), filename: "foliage.jpg")
+photo2.image.attach(io: File.open("/Users/ahmed/Downloads/photos/card.jpg"), filename: "card.jpg")
+photo3.image.attach(io: File.open("/Users/ahmed/Downloads/photos/rain.jpg"), filename: "rain.jpg")
+
+photo4.image.attach(io: File.open("/Users/ahmed/Downloads/photos/architecture.jpg"), filename: "architecture.jpg")
+photo5.image.attach(io: File.open("/Users/ahmed/Downloads/photos/beach.jpg"), filename: "beach.jpg")
+photo6.image.attach(io: File.open("/Users/ahmed/Downloads/photos/boat.jpg"), filename: "boat.jpg")
