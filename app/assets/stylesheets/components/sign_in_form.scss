@@ -36,7 +36,7 @@
 }
 
 .input-container {
-  font-size: 0.5em;
+  font-size: 0.65em;
   background-color: white;
   border-radius: 3px;
   border: 1px solid;
@@ -56,8 +56,9 @@
 }
 
 .form-title {
-  font-family: arial;
-  font-size: 0.75em;
+  // font-family: arial;
+  font-size: 0.85em;
+  font-weight: bold;
 }
 
 #submit-button, #demo-button {
@@ -92,34 +93,34 @@
   padding-top: 5px;
   height: 20px;
   width: 80%;
-  font-size: 0.4em;
+  font-size: 0.55em;
   font-family: arial;
   color: #b20f0f;
 }
 
 #required {
-  font-size: 0.6em;
+  font-size: 0.65em;
   color: gray;
   font-style: italic;
   padding-right: 140px;
 }
 
 #already-has-account {
-  font-size: 0.6em;
+  font-size: 0.7em;
   color: gray;
   margin: 0 auto;
   margin-top: 5px;
 }
 
 #already-has-account {
-  font-size: 0.6em;
+  font-size: 0.7em;
   color: gray;
   margin: 0 auto;
   margin-top: 5px;
 }
 
 #no-account-yet {
-  font-size: 0.6em;
+  font-size: 0.7em;
   color: gray;
   margin: 0 auto;
   margin-top: 5px;
