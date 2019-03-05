@@ -10,7 +10,7 @@ const Splash = () => {
       <div id="splash-photo">
         <div id="splash-text-container">
           <div id="splash-text">Find your inspiration.</div>
-          <button id="signup-button-splash"><Link to="/signup">Sign Up</Link></button>
+          <Link to="/signup" id="signup-button-splash">Sign Up</Link>
         </div>
       </div>
       <footer id="splash-footer">

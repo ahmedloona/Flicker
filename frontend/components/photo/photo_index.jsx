@@ -13,7 +13,6 @@ class PhotoIndex extends React.Component {
   }
 
   render() {
-    // debugger;
     let photosIndexItemArray = this.props.photos.map( (photo) => {
       return(
         <PhotoIndexItem

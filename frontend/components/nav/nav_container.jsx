@@ -3,8 +3,6 @@ import { signout } from '../../actions/session_actions';
 import Nav from './nav';
 
 const mSP = ({ session, entities: { users } }) => {
-  // const currentUserId = state.session.id;
-  // const currentUser = state.entities.users[currentUser];
   return ({
     currentUser: users[session.id]
   })

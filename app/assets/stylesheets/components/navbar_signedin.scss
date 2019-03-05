@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar-signedin {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  height: 50px;
+  background-color: black;
+  padding: 10px;
+}
+
+#flutter-logo-container {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-items: center;
+}
+
+#flutter-logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8em;
+}
+
+.navbar-signedin > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.7em;
+  color: white;
+}
+
+#signout-button {
+  margin-left: 10px;
+  margin-left: 10px;
+  background-color: white;
+  border-style: none;
+  border-radius: 5px;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  color: black;
+  width: 75px;
+  height: 25px;
+}
+
+#signout-button > * {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+}
+
+#signout-button:hover {
+  color: grey;
+}
+
+#search-bar-signedin {
+  background-color: lightgrey;
+  border-radius: 3px;
+  border: none;
+  color: black;
+}

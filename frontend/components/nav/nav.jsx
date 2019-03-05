@@ -7,7 +7,7 @@ const Nav = (props) => {
       <div className="navbar-signedout">
         <div id="flutter-logo-container"><Link to="/" id="flutter-logo">flutter</Link></div>
         <div id="signin-link-container"><Link to="/signin" id="signin-link">Log In</Link></div>
-        <button id="signup-button"><Link to="/signup">Sign Up</Link></button>
+        <Link to="/signup" id="signup-button">Sign Up</Link>
       </div>
     )
   } else {
@@ -15,7 +15,7 @@ const Nav = (props) => {
         <div className="navbar-signedin">
           <div id="flutter-logo-container"><Link to="/" id="flutter-logo">flutter</Link></div>
           <div>You</div>
-          <div>Search Bar</div>
+          <div><input id="search-bar-signedin" placeholder="Photos, people, or groups"></input></div>
           <div>Upload</div>
           <div>{`Welcome ${props.currentUser.username}`}</div>
           <div><button id="signout-button" onClick={props.signout}>SignOut</button></div>
