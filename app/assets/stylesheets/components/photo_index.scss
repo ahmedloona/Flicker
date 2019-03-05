@@ -1,0 +1,22 @@
+
+.photo-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f3f5f6;
+}
+
+.photo-item-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .photo-card {
+    background-color: white;
+    width: 75%;
+    margin: auto;
+    img {
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 60px;
+    }
+  }
+}

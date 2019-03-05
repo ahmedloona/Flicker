@@ -7,13 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # User
-# User.destroy_all
+User.destroy_all
 ahmed = User.create!(username: "Ahmed", password: "123456", email: "ahmed@gmail.com")
 
 mike = User.create!(username: "mike", password: "123456", email: "mike@yahoo.com")
 
 # Photo
-# Photo.destroy_all
+Photo.destroy_all
 photo1 = Photo.create!(user_id: ahmed.id, caption: "foliage")
 photo2 = Photo.create!(user_id: ahmed.id, caption: "card")
 photo3 = Photo.create!(user_id: ahmed.id, caption: "rain")
