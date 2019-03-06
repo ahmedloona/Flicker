@@ -14,13 +14,13 @@ class PhotoIndex extends React.Component {
 
   render() {
 
-    function shuffle(a) {
-      for (let i = a.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [a[i], a[j]] = [a[j], a[i]];
-      }
-      return a;
-    }
+    // function shuffle(a) {
+    //   for (let i = a.length - 1; i > 0; i--) {
+    //       const j = Math.floor(Math.random() * (i + 1));
+    //       [a[i], a[j]] = [a[j], a[i]];
+    //   }
+    //   return a;
+    // }
 
     let photosIndexItemArray = this.props.photos.map( (photo) => {
       return(
@@ -31,7 +31,7 @@ class PhotoIndex extends React.Component {
       )
     });
 
-    photosIndexItemArray = shuffle(photosIndexItemArray);
+    // photosIndexItemArray = shuffle(photosIndexItemArray);
 
     return (
       <div className="photo-index">

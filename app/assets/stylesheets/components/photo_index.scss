@@ -1,19 +1,19 @@
 
 .photo-index {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: #f3f5f6;
-  grid-auto-rows: max-content;
 }
 
 .photo-item-container {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  align-self: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
 
   .photo-card {
     border-radius: 5px;
     background-color: white;
-    width: 75%;
+    width: 85%;
     margin: auto;
     img {
       width: 100%;
