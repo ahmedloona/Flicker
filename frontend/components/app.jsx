@@ -6,7 +6,7 @@ import SignInFormContainer from './session_form/signin_form_container';
 import GreetingContainer from './greeting/greeting_container';
 import Splash from './splash/splash';
 import Dashboard from './dashboard/dashboard';
-
+import PhotoShowContainer from './photo/photo_show_container'
 
 const App = () => (
 
@@ -15,6 +15,7 @@ const App = () => (
     <AuthRoute exact path="/" component={Splash} />
     <AuthRoute exact path="/signup" component={SignUpFormContainer} />
     <AuthRoute exact path="/signin" component={SignInFormContainer} />
+    <ProtectedRoute exact path="/photos/:id" component={PhotoShowContainer} />
   </div>
 );
 
