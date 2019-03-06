@@ -6,16 +6,18 @@ import SignInFormContainer from './session_form/signin_form_container';
 import GreetingContainer from './greeting/greeting_container';
 import Splash from './splash/splash';
 import Dashboard from './dashboard/dashboard';
-import PhotoShowContainer from './photo/photo_show_container'
+import PhotoShowContainer from './photo/photo_show_container';
+import UserShowContainer from './user/user_show_container';
+
 
 const App = () => (
-
   <div>
     <ProtectedRoute exact path="/dashboard" component={Dashboard} />
     <AuthRoute exact path="/" component={Splash} />
     <AuthRoute exact path="/signup" component={SignUpFormContainer} />
     <AuthRoute exact path="/signin" component={SignInFormContainer} />
     <ProtectedRoute exact path="/photos/:id" component={PhotoShowContainer} />
+    <ProtectedRoute exact path="/users/:id" component={UserShowContainer} />
   </div>
 );
 

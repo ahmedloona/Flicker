@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const PhotoIndexItem = (props) => {
   return(
     <div className="photo-item-container">
-      <Link to={`/users/${props.photo.username}`}></Link>
       <div className="photo-card">
+        <div><Link to={`/users/${props.photo.userId}`}>{props.photo.username}</Link></div>
         <Link to={`/photos/${props.photo.id}`}>
           <img
             src={`${props.photo.imageUrl}`}
