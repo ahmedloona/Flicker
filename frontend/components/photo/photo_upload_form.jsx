@@ -60,7 +60,7 @@ class PhotoUploadForm extends React.Component {
               {preview}
             </div>
             <div>
-              <label id="caption" htmlFor="photo-caption">Caption</label>
+              <label id="caption" htmlFor="photo-caption">caption your photo</label>
             </div>
             <div>
               <input type="textarea" wrap="soft"
