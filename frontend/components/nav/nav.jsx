@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import PhotoUploadFormContainer from '../photo/photo_upload_form_';
 
 const Nav = (props) => {
   if (props.currentUser === undefined) {
@@ -14,9 +15,9 @@ const Nav = (props) => {
       return(
         <div className="navbar-signedin">
           <div id="flutter-logo-container"><Link to="/" id="flutter-logo">flutter</Link></div>
-          <div>You</div>
+          <Link to={`/users/${props.currentUser.id}`}><div>You</div></Link>
           <div><input id="search-bar-signedin" placeholder="Photos, people, or groups"></input></div>
-          <div>Upload</div>
+          <Link to="/photos/upload"><div>Upload</div></Link>
           <div>{`Welcome ${props.currentUser.username}`}</div>
           <div><button id="signout-button" onClick={props.signout}>SignOut</button></div>
         </div>

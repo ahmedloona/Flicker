@@ -25,12 +25,24 @@ export const getPhoto = (id) => {
   )
 }
 
+// export const createPhoto = (photo) => {
+//   return (
+//     $.ajax({
+//       method: "POST",
+//       url: `api/photos`,
+//       data: {photo: photo}
+//     })
+//   )
+// }
+
 export const createPhoto = (photo) => {
   return (
     $.ajax({
-      method: "POST",
-      url: `api/photos`,
-      data: {photo: photo}
+      url: `api/photos/`,
+      method: 'POST',
+      data: photo,
+      contentType: false,
+      processData: false
     })
   )
 }

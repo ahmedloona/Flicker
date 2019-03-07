@@ -8,6 +8,7 @@ import Splash from './splash/splash';
 import Dashboard from './dashboard/dashboard';
 import PhotoShowContainer from './photo/photo_show_container';
 import UserShowContainer from './user/user_show_container';
+import PhotoUploadFormContainer from './photo/photo_upload_form_container';
 
 
 const App = () => (
@@ -16,6 +17,7 @@ const App = () => (
     <AuthRoute exact path="/" component={Splash} />
     <AuthRoute exact path="/signup" component={SignUpFormContainer} />
     <AuthRoute exact path="/signin" component={SignInFormContainer} />
+    <ProtectedRoute exact path="/photos/upload" component={PhotoUploadFormContainer} />
     <ProtectedRoute exact path="/photos/:id" component={PhotoShowContainer} />
     <ProtectedRoute exact path="/users/:id" component={UserShowContainer} />
   </div>

@@ -76,7 +76,7 @@ class SignInForm extends React.Component {
               <div id="required">* required</div>
               <button type="submit" id="submit-button">Next</button>
               <button id="demo-button" onClick={this.populateDemoFields}>Demo</button>
-              <div id="no-account-yet">Not a Flickr member? <Link to="/signup">Sign up here</Link></div>
+              <div id="no-account-yet">Not a Flutter member? <Link to="/signup">Sign up here</Link></div>
             </form>
         </div>
       </div>
