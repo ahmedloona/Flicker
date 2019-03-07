@@ -2,8 +2,9 @@ import { connect } from 'react-redux';
 import { createPhoto } from '../../actions/photo_actions';
 import PhotoUploadForm from './photo_upload_form';
 
-const mSP = (state) => {
+const mSP = ({ session, entities: { users } }) => {
   return ({
+    currentUser: users[session.id]
   })
 }
 

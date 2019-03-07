@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 class PhotoUploadForm extends React.Component {
   constructor(props) {
@@ -34,25 +36,42 @@ class PhotoUploadForm extends React.Component {
 
       formData.append('photo[image]', this.state.photoFile);
     }
-    this.props.createPhoto(formData);
+    this.props.createPhoto(formData).then( () => this.props.history.push(`/users/${this.props.currentUser.id}`));;
   }
 
   render() {
     console.log(this.state);
-    const preview = this.state.photoUrl ? <img src={this.state.photoUrl} /> : null;
+    const preview = this.state.photoUrl ? <img id="image-preview" src={this.state.photoUrl}/> : null;
     return (
-      <form onSubmit={this.handleSubmit.bind(this)}>
-        <label htmlFor="photo-body">Body of Post</label>
-        <input type="text"
-          id="photo-body"
-          value={this.state.caption}
-          onChange={this.handleInput.bind(this)}/>
-        <input type="file"
-          onChange={this.handleFile.bind(this)}/>
-        <h3>Image preview </h3>
-        {preview}
-        <button>Upload new Photo!</button>
-      </form>
+      <div>
+        <div className="navbar-upload-form">
+          <div id="flutter-logo-container"><Link to="/" id="flutter-logo">flutter</Link></div>
+        </div>
+        <div id="photo-upload-form-container">
+          <form onSubmit={this.handleSubmit.bind(this)} className="upload-form">
+            <div>
+              <label class="custom-file-upload">
+                <input type="file"
+                onChange={this.handleFile.bind(this)}/>
+                Select Photo
+              </label>
+            </div>
+            <div id="preview">
+              {preview}
+            </div>
+            <div>
+              <label id="caption" htmlFor="photo-caption">Caption</label>
+            </div>
+            <div>
+              <input type="textarea" wrap="soft"
+              id="photo-caption"
+              value={this.state.caption}
+              onChange={this.handleInput.bind(this)}/>
+            </div>
+            <button id="upload-button">Upload Photo</button>
+          </form>
+        </div>
+      </div>
     );
   }
 }
