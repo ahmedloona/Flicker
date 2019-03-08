@@ -30,7 +30,7 @@ CSS3 was used for frontend styling.
 
 __Invalid Username/Password__
 
-![Invalid credentials entered](hhttps://github.com/ahmedloona/Flicker/blob/master/readme_images/3_invalid_credentials.png)
+![Invalid credentials entered](https://github.com/ahmedloona/Flicker/blob/master/readme_images/3_invalid_credentials.png)
 
 * Upon successful login, user is directed to an index page showing all photos. The navigation bar shows a greeting for the current user
 
