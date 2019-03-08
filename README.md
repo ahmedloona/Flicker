@@ -21,11 +21,12 @@ CSS3 was used for frontend styling.
 
 2. User clicks the login (existing user) or signup button (new user)
 
-2 A. _Logging in_ 
+2 A. _Logging in_. On clicking Login button, user may enter their credentials or click __Demo__ button to try out the site without having to create an account
 
-* On clicking Login button, user may enter their credentials or click __Demo__ button to try out the site without having to create an account
+* User clicks the __Demo__ button
 
-![Demo login](https://github.com/ahmedloona/Flicker/blob/master/readme_images/2_demo_login.png)
+<img src="hhttps://github.com/ahmedloona/Flicker/blob/master/readme_images/2_demo_login.png" width="600">
+
 
 * User enters their own credentials with errors. The errors are displayed and handled allowing user to correct their input
 
