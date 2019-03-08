@@ -16,7 +16,7 @@ CSS3 was used for frontend styling.
 
 1. User visits the application [flutter](https://friskr.herokuapp.com/#/)
 
-<img src="https://github.com/ahmedloona/Flicker/blob/master/readme_images/1_home.png" width="500">
+<img src="https://github.com/ahmedloona/Flicker/blob/master/readme_images/1_home.png" width="600">
 
 
 2. User clicks the login (existing user) or signup button (new user)
@@ -31,14 +31,14 @@ CSS3 was used for frontend styling.
 
 __Invalid Username/Password__
 
-![Invalid credentials entered](https://github.com/ahmedloona/Flicker/blob/master/readme_images/3_invalid_credentials.png)
+<img src="https://github.com/ahmedloona/Flicker/blob/master/readme_images/3_invalid_credentials.png" width="600">
+
 
 * Upon successful login, user is directed to an index page showing all photos. The navigation bar shows a greeting for the current user
 
-![Dashboard1](https://github.com/ahmedloona/Flicker/blob/master/readme_images/5_dashboard_1.png)
-![Dashboard2](https://github.com/ahmedloona/Flicker/blob/master/readme_images/6_dashboard_2.png)
-![Dashboard3](https://github.com/ahmedloona/Flicker/blob/master/readme_images/7_dashboard_3.png)
-
+<img src="https://github.com/ahmedloona/Flicker/blob/master/readme_images/5_dashboard_1.png" width="600">
+<img src="https://github.com/ahmedloona/Flicker/blob/master/readme_images/6_dashboard_2.png" width="600">
+<img src="https://github.com/ahmedloona/Flicker/blob/master/readme_images/7_dashboard_3.png" width="600">
 
 2 B. _Signing Up_ 
 
