@@ -25,14 +25,14 @@ CSS3 was used for frontend styling.
 
 * User clicks the __Demo__ button
 
-<img src="hhttps://github.com/ahmedloona/Flicker/blob/master/readme_images/2_demo_login.png" width="600">
+<img src="https://github.com/ahmedloona/Flicker/blob/master/readme_images/2_demo_login.png" width="600">
 
 
 * User enters their own credentials with errors. The errors are displayed and handled allowing user to correct their input
 
 __Invalid Username/Password__
 
-<img src="https://github.com/ahmedloona/Flicker/blob/master/readme_images/3_invalid_credentials.png" width="600">
+<img src="https://github.com/ahmedloona/Flicker/blob/master/readme_images/3_invalid_credentials.png" width="400">
 
 
 * Upon successful login, user is directed to an index page showing all photos. The navigation bar shows a greeting for the current user
