@@ -16,7 +16,7 @@ CSS3 was used for frontend styling.
 
 1. User visits the application [flutter](https://friskr.herokuapp.com/#/)
 
-![Homepage](https://github.com/ahmedloona/Flicker/blob/master/readme_images/1_home.png)
+![Homepage](https://github.com/ahmedloona/Flicker/blob/master/readme_images/1_home.png  | width=100)
 
 2. User clicks the login (existing user) or signup button (new user)
 
