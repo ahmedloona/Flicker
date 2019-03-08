@@ -22,6 +22,7 @@ class PhotoUploadForm extends React.Component {
     fileReader.onloadend = () => {
 
       this.setState({photoFile: file, photoUrl: fileReader.result});
+      this.props.clearPhotoUploadErrors();
     };
     if (file) {
       fileReader.readAsDataURL(file);
@@ -40,7 +41,7 @@ class PhotoUploadForm extends React.Component {
   }
 
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     const preview = this.state.photoUrl ? <img id="image-preview" src={this.state.photoUrl}/> : null;
     return (
       <div>
@@ -50,11 +51,14 @@ class PhotoUploadForm extends React.Component {
         <div id="photo-upload-form-container">
           <form onSubmit={this.handleSubmit.bind(this)} className="upload-form">
             <div>
-              <label class="custom-file-upload">
+              <label className="custom-file-upload">
                 <input type="file"
                 onChange={this.handleFile.bind(this)}/>
                 Select Photo
               </label>
+            </div>
+            <div id="photo-upload-error">
+              {this.props.photoUploadErrors}
             </div>
             <div id="preview">
               {preview}

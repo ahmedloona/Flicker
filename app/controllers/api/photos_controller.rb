@@ -25,7 +25,8 @@ class Api::PhotosController < ApplicationController
     if @photo.save
       render "api/photos/show"
     else
-      render json: @photo.errors.full_messages, status: 422
+      # debugger
+      render json: @photo.errors.messages[:image], status: 422
     end
   end
 
