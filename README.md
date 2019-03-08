@@ -18,6 +18,21 @@ CSS3 was used for frontend styling.
 
 ![Homepage](https://github.com/ahmedloona/Flicker/blob/master/readme_images/1_home.png)
 
+2. User clicks the login (existing user) or signup button (new user)
+
+* On clicking Login button, user may enter their credentials or click __Demo__ button to try out the site without having to create an account
+
+![Demo login](https://github.com/ahmedloona/Flicker/blob/master/readme_images/2_demo_login.png)
+
+* User enters their own credentials with errors. The errors are displayed and handled allowing user to correct their input
+
+__Invalid Username/Password__
+
+![Invalid credentials entered](hhttps://github.com/ahmedloona/Flicker/blob/master/readme_images/3_invalid_credentials.png)
+
+
+
+
 ## Feature 2: Photos
 
 
