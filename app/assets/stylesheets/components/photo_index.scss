@@ -28,6 +28,8 @@
       color: black;
       font-size: 0.8em;
       text-decoration: none;
+      font-weight: bold;
+
     }
     div > *:hover {
       text-decoration: underline;
@@ -36,6 +38,11 @@
       width: 100%;
       // padding-top: 30px;
       // padding-bottom: 60px;
+    }
+    #caption-text {
+      color: black;
+      font-size: 0.6em;
+      font-weight: bold;
     }
   }
 }

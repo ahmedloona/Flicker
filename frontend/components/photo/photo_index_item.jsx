@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 const PhotoIndexItem = (props) => {
+  // debugger
   return(
     <div className="photo-item-container">
       <div className="photo-card">
@@ -12,6 +13,7 @@ const PhotoIndexItem = (props) => {
             src={`${props.photo.imageUrl}`}
           />
         </Link>
+        <div id="caption-text">{`${props.photo.caption}`}</div>
       </div>
     </div>
   )
