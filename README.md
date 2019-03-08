@@ -32,7 +32,7 @@ __Invalid Username/Password__
 
 ![Invalid credentials entered](hhttps://github.com/ahmedloona/Flicker/blob/master/readme_images/3_invalid_credentials.png)
 
-* Upon successful login, user is directed to an index page showing all photos. The navigation bar show a greeting for the current user
+* Upon successful login, user is directed to an index page showing all photos. The navigation bar shows a greeting for the current user
 
 ![Dashboard1](https://github.com/ahmedloona/Flicker/blob/master/readme_images/5_dashboard_1.png)
 ![Dashboard2](https://github.com/ahmedloona/Flicker/blob/master/readme_images/6_dashboard_2.png)
