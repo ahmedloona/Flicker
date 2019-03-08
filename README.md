@@ -14,6 +14,7 @@ CSS3 was used for frontend styling.
 
 ## Feature 1: User Authentication
 
+1. User visits the application [flutter](https://friskr.herokuapp.com/#/)
 
 ![Homepage](https://github.com/ahmedloona/Flicker/blob/master/readme_images/1_home.png)
 
